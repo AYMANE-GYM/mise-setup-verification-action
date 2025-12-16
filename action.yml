@@ -1,0 +1,48 @@
+name: 'mise-setup-verification'
+description: 'Setup mise and verify tool installations in CI/CD pipelines.'
+author: 'Banee Ishaque K'
+branding:
+  icon: 'check-circle'
+  color: 'green'
+
+inputs:
+  mise_version:
+    description: 'Version of mise to install (e.g., 2025.12.9)'
+    required: true
+  working_directory:
+    description: 'Directory containing mise.toml'
+    required: true
+  tool_name:
+    description: 'Name of the tool to verify (e.g., python)'
+    required: true
+  version_command:
+    description: 'Command to check tool version (e.g., python -V)'
+    required: true
+  install:
+    description: 'Whether to run mise install'
+    required: false
+    default: 'true'
+  cache:
+    description: 'Whether to enable caching'
+    required: false
+    default: 'true'
+  mise_file:
+    description: 'Path to mise configuration file'
+    required: false
+    default: 'mise.toml'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Set up mise
+      uses: jdx/mise-action@v3
+      with:
+        version: ${{ inputs.mise_version }}
+        install: ${{ inputs.install }}
+        cache: ${{ inputs.cache }}
+        working_directory: ${{ inputs.working_directory }}
+        mise_file: ${{ inputs.mise_file }}
+
+    - name: Verify Tool Installation
+      run: ${{ github.action_path }}/scripts/verify-mise-tool.bash "${{ inputs.working_directory }}/${{ inputs.mise_file }}" "${{ inputs.tool_name }}" "${{ inputs.version_command }}"
+      shell: bash

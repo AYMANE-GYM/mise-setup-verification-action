@@ -1,0 +1,30 @@
+name: Test Action
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    name: Test Mise Setup Verification
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create Dummy mise.toml
+        run: |
+          echo '[tools]' > mise.toml
+          echo 'python = "3.12.1"' >> mise.toml
+
+      - name: Run Action (Self-Test)
+        uses: ./
+        with:
+          mise_version: '2025.12.9'
+          working_directory: '.'
+          tool_name: 'python'
+          version_command: 'python -V'
+          install: 'true'
+          cache: 'true'
+          mise_file: 'mise.toml'
+
+      - name: Verify Output
+        run: echo "Action completed successfully."
